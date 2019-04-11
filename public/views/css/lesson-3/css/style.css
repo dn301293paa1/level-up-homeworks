@@ -21,9 +21,7 @@ a {
 * {
 	box-sizing: border-box;
 }
-body {
-	font-family: Arial , sans-serif;
-}
+
 header {
 	background-color: #3F51B5;
 	position: fixed;
@@ -33,19 +31,16 @@ header {
 	z-index: 999;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
-.main-nav {
-	color: white;
-	font-weight: bold;
-}
+
 .main-description {
 	position: relative;
-	top: 100px;
-	left: 90px;
+top: 80px;
+left: 30px;
+padding-bottom: 30px;
+font-size: 35px;
+font-weight: bold;
 }
-h1 {
-	font-size: 35px;
-	font-weight: bold;
-}
+
 .cards {
 	margin: 30px;
 	display: inline-block;
@@ -54,22 +49,31 @@ h1 {
 	height: 350px;
 	position: relative;
 }
+
+.cards-content {
+	margin-top: 70px;
+}
+
 img {
 	width: 300px;
 	height: 150px;
 }
+
 h2 {
 	font-weight: bold;
 	font-size: 25px;
 	margin: 10px;
 }
+
 .content {
 	width: 1170px;
-	margin: 100px 50px 50px 50px;
+	margin: 0 auto;
 }
+
 .photo-card {
 	position: relative;
 }
+
 .label-item {
   position: absolute;
   z-index: 1;
@@ -78,6 +82,7 @@ h2 {
   width: 25px;
   top: 10px;
 }
+
 .choosecard {
   background-color: #3F51B5; 
   display: block;
@@ -91,9 +96,11 @@ h2 {
   text-decoration: none;
   color: white;
 }
+
 .choosecard:hover {
   text-decoration: none;
 }
+
 .card-name {
 	padding: 15px;
 	position: relative;
@@ -109,18 +116,28 @@ footer {
 	text-align: center;
 	color: white;
 }
-a:active {
+
+.pagination-catalog {
+	text-align: center; 
+	margin: 10px;
+}
+
+.pagination-catalog a {
 	text-decoration: underline;
+	padding-right: 10px;
+	cursor: default;
 }
-.pagination-catalog  {
-	padding-left: 49%;
-	pointer-events: none;
+
+.pagination-catalog .page:active {
+	text-decoration: none; 
 }
-.page {
-	color: black; 
-	text-decoration: underline;
-	padding: 5px;
+
+.main-nav {
+	color: white;
+	font-weight: bold;
+	text-decoration: none; 
 }
-.page:active {
-	text-decoration: none;
+
+.head-nav .main-nav:active {
+	text-decoration: underline; 
 }

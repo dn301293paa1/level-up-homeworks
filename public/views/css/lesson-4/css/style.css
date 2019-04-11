@@ -1,0 +1,55 @@
+.wrapper {
+	width: 300px;
+margin:  auto;
+padding-top: 5px;
+}
+.square1 {
+	width: 70px;
+	height: 70px;
+	background-color: #8E44AD;
+}
+.Green-rectangle {
+	float: right;
+	width: 145px;
+	height: 70px;
+	background-color: #2ECC71;
+}
+.red-rectangle {
+	background-color: red;
+	width: 70px;
+	height: 145px;
+	float: right;
+}
+.blue-rectangle {
+	width: 70px;
+	height: 220px;
+	background-color: #3498DB;
+	float: left;
+}
+.red-rectangle1 {
+	background-color: red;
+	width: 70px;
+	height: 145px;
+	float: left;
+}
+.square2 {
+	width: 70px;
+	height: 70px;
+	background-color: #F1C40F;
+	float: right;
+}
+.blue-rectangle1 {
+	width: 220px;
+	height: 70px;
+	background-color: #3498DB;
+	float: right;
+}
+.wrapper div {
+	margin-right:5px;
+    margin-bottom:5px
+}
+
+
+
+
+
