@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  background-image: url("../images/pattern.png");
 }
 
 body {
@@ -29,7 +30,6 @@ a {
   background-color: #25b425;
   color: white;
   line-height: 50px;
-  width: 100%;
 }
 
 .clearfix:after {
@@ -40,7 +40,6 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
   width: 1170px;
 }
 
@@ -85,11 +84,14 @@ a {
 }
 
 .start-home {
-  background-image: url(../images/intro.jpg);
-  height: 400px;
+  background-image: url("../images/intro.jpg");
+  height: 550px;
   color: white;
   background-position: center;
   position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .start-intro {
@@ -102,12 +104,12 @@ a {
 }
 
 .content {
-  background-image: url(../images/pattern.png);
+  
   padding-bottom: 70px;
 }
 
 .subject {
-  margin: 5% 0 5%;
+  margin: 60px auto 40px;
   font-size: 34px;
   font-weight: bold;
 }
@@ -165,10 +167,6 @@ a {
   line-height: 20px;
 }
 
-.card-button {
-  padding: 0 8px 12px;
-}
-
 .btn {
   display: inline-block;
   vertical-align: top;
@@ -180,6 +178,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+  margin-right: 1px;
 }
 
 .load-more {
@@ -196,13 +195,11 @@ a {
   padding: 24px 0;
   background-color: black;
   color: white;
-  text-align: center;
 }
 
 .footer-link {
   display: table;
-  margin-bottom: 16px;
-
+}
 .footer-link:last-child {
   margin-bottom: 0px;
 }
