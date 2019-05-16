@@ -1,0 +1,370 @@
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  color: #444;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Unknown props */
+/* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); - filter */
+/* transform: rotate(45deg); - checkbox */
+/* border-radius: 3px; - card rounding */
+
+/* Your styles go below */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header, .footer {
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  background-color: #484F78;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.content {
+  padding: 48px 0;
+  min-height: 100px;
+}
+
+.sidebar {
+  padding:16px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.checkbox-input {
+  display: none;
+}
+.checkbox-name {
+  position: relative;
+  padding-left: 36px;
+  display: block;
+  line-height: 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.checkbox-name:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox-name:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  border: solid 1px black;
+}
+
+.checkbox-input:checked + .checkbox-name:after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  border-right: 2px solid aqua;
+  border-bottom: 2px solid aqua;
+  transform: rotate(45deg);
+}
+
+.row {
+  font-size: 0;
+  margin: 0 -15px;
+}
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 1rem;
+}
+
+@media (min-width: 320px;) {
+  .container {
+    width: 300px;
+  }
+  .col-es-1 {
+    width: 8.3333%;
+  }
+  .col-es-2 {
+    width: 16.6666%;
+  }
+  .col-es-3 {
+    width: 25%;
+  }
+  .col-es-4 {
+    width: 33.3333%;
+  }
+  .col-es-5 {
+    width: 41.6666%;
+  }
+  .col-es-6 {
+    width: 50%;
+  }
+  .col-es-7 {
+    width: 58.3333%;
+  }
+  .col-es-8 {
+    width: 66.6666%;
+  }
+  .col-es-9 {
+    width: 75%;
+  }
+  .col-es-10 {
+    width: 83.3333%;
+  }
+  .col-es-11 {
+    width: 91.6666%;
+  }
+  .col-es-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 544px) {
+  .container {
+    width: 524px;
+  }
+  .col-sm-1 {
+    width: 8.3333%;
+  }
+  .col-sm-2 {
+    width: 16.6666%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-4 {
+    width: 33.3333%;
+  }
+  .col-sm-5 {
+    width: 41.6666%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-7 {
+    width: 58.3333%;
+  }
+  .col-sm-8 {
+    width: 66.6666%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-10 {
+    width: 83.3333%;
+  }
+  .col-sm-11 {
+    width: 91.6666%;
+  }
+  .col-sm-12 {
+    width: 100%;
+}
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 748px;
+  }
+  .col-md-1 {
+    width: 8.3333%;
+  }
+  .col-md-2 {
+    width: 16.6666%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.3333%;
+  }
+  .col-md-5 {
+    width: 41.6666%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.3333%;
+  }
+  .col-md-8 {
+    width: 66.6666%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.3333%;
+  }
+  .col-md-11 {
+    width: 91.6666%;
+  }
+  .col-md-12 {
+    width: 100%;
+}
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 1004px;
+  }
+  .col-lg-1 {
+    width: 8.3333%;
+  }
+  .col-lg-2 {
+    width: 16.6666%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.3333%;
+  }
+  .col-lg-5 {
+    width: 41.6666%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.3333%;
+  }
+  .col-lg-8 {
+    width: 66.6666%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-10 {
+    width: 83.3333%;
+  }
+ .col-lg-11 {
+    width: 91.6666%;
+  }
+  .col-lg-12 {
+    width: 100%;
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1180px;
+  }
+ .col-xl-1 {
+    width: 8.3333%;
+  }
+  .col-xl-2 {
+    width: 16.6666%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.3333%;
+  }
+  .col-xl-5 {
+    width: 41.6666%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.3333%;
+  }
+  .col-xl-8 {
+    width: 66.6666%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.3333%;
+  }
+  .col-xl-11 {
+    width: 91.6666%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.card-image {
+  height: 250px;
+  background-image: url("../images/everest.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.card-image-heading {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  font-size: 1.2rem;
+}
+
+.card-content {
+  padding:  15px;
+}
+
+.heading-descr {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 50px;
+  color: green;
+  height: 40px;
+  padding: 0 5px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 1px;
+  border-radius: 3px;
+  margin-right: 15px; 
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
