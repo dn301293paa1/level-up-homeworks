@@ -53,6 +53,7 @@ li:last-child {
   background-position: -102px -6px; 
   cursor: pointer;
 }
+
 a { 
    background-color: #3F51B5;
   display: block;
@@ -61,7 +62,6 @@ a {
   padding: 10px 5px;
   border-radius: 3px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: white;
   position: absolute;
