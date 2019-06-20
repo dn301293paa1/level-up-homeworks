@@ -1,109 +1,26 @@
-* , *:before, *::after {
-  box-sizing: inherit;
+.wrapper {
+  border: 1px solid #ccc;
+  width: 700px;
+  height: 800px;
+  margin: 0 auto; 
 }
 
-html {
-  box-sizing: border-box;
-  font-size: 16px;
+.row {
+  display: flex;
+  justify-content: space-around;
 }
-
-body {
-  color: #444;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-.content {
-  padding: 100px;
-  margin: 0 auto;
-}
-
-.table {
-  box-shadow: 2px 0px 22px 6px rgba(0, 0, 0, 0.15);
-  min-width: 320px;
-}
-
-.list {
-  display: block;
-  position: relative;
-}
-
-li{
-  border-top: 1px solid #c9c8c8;
-  border-left: 1px solid #c9c8c8;
-  border-right: 1px solid #c9c8c8;
-  padding: 20px;
-  padding-right: 100px;
-  vertical-align: middle;
-}
-
-li:last-child {
-  border-bottom: 1px solid #c9c8c8 ;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-  float: left;
-  display: inline-block;
-  margin-right: 10px;
-  background-image: url("../images/sprite.png");
-}
-
-.smile {
-  background-position: -102px -6px; 
-  cursor: pointer;
-}
-a { 
-   background-color: #3F51B5;
-  display: block;
-  position: relative;
-  height: auto;
-  padding: 10px 5px;
-  border-radius: 3px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  vertical-align: middle;
-}
-
-.edit {
-  background-position: 150px 86px;
-}
-
-.lorem {
-  background-position: 343px 246px;
-}
-
-.main {
-  margin-bottom: 100px;
-}
-
-.text {
-  display: block;
-}
-
-.approved {
- background-color: green;
-}
-
-.error {
+.block {
+  background-color: darkslateblue;
+  width: 100px;
+/*  height: 100px;
+*/}
+.red{
   background-color: red;
 }
-
-.pending {
-  background-color: orange;
+.green{
+  background-color: green;
 }
 
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-image: radial-gradient(circle, rgba(250,250,250,1), rgba(200,170,200,1) 3px);
-  background-size: 4px 4px;
-  margin: 0 auto;
-  box-shadow: 20px 20px 1px rgba(255,55,99,0.4) inset, 0px 20px 1px rgba(11,10,199,9.4) inset, -20px 0px 1px rgba(255,49,88,9.4) inset, -20px -10px 1px rgba(255,110,35,9.4) inset, 10px -10px 1px rgba(33,277,32,9.4) inset, 20px 0px 1px rgba(90,15,79,9.4) inset
+.yellow {
+  background-color: yellow;
 }
