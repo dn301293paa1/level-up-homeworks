@@ -19,28 +19,22 @@ console.log(answer)
 
 
 // task 4 
-var userName = prompt('Кто пришёл?','');
-
-if (userName == 'Админ') {
-
-  var pass = prompt('Пароль?','');
-
-  if (pass == 'Чёрный Властелин') {
-    console.log( 'Добро пожаловать!' );
-  } else if (pass == null) { 
-    console.log( 'Вход отменён' );
+let  userName = prompt('Кто пришел?', '');
+if (userName === 'Админ') {
+  var password = prompt('ведите пароль', '');
+  if (password === 'Чёрный Властелин') {
+    console.log('Добро пожаловать!');
+  } else if (password === null) {
+    console.log('Вход отменён');
   } else {
-    console.log( 'Пароль неверен' );
+    console.log('Пароль неверен');
   }
-
-} else if (userName == null) { 
-  console.log( 'Вход отменён' );
-
-} else {
-
-  console.log( 'Я вас не знаю' );
-
+} else if (userName === null) {
+  console.log('Вход отменён');
+  } else {
+  console.log('Я вас не знаю');
 }
+
 
 // Task 5
 var result = (a+b<4) ? 'Мало' : 'Много'
