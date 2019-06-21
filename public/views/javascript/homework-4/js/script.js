@@ -12,4 +12,9 @@ function checkAge (age) {
  
   console.log(checkAge(1));
 
+//Task 3
 
+function min (a,b) {
+return (a<b) ? a : (a>b) ? b : a
+}
+console.log(min(10, 0))
