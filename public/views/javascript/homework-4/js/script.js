@@ -30,6 +30,11 @@ i++
 
 // Task 6
 
+while (true) {
+let pr = prompt('Введите число');
+if (pr == null || pr > 100) break;
+}
+//task  7
 
 
 // Unit link - https://learn.javascript.ru/function-basics
