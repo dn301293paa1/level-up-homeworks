@@ -80,23 +80,23 @@ switch (a) {
 //  отличий не будет
 
 //Task 2
-function checkAge(age) {
+function checkAge (age) {
   return age > 18 ? true : age < 18 ? confirm('Родители разрешили?') : false;
 }
 
 console.log(checkAge(1));
 //Task 2.2
-function checkAge(age) {
+function checkAge (age) {
   return age > 18 || confirm('Родители разрешили?');
 }
 //Task 3
-function min(a, b) {
+function min (a, b) {
   return a < b ? a : a > b ? b : a;
 }
 console.log(min(10, 0));
 
 //Task 3
-function pow(x, n) {
+function pow (x, n) {
   var sum = x;
   for (var i = 1; i < n; i++) {
     sum = sum * x;
