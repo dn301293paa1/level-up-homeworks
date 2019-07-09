@@ -1,70 +1,24 @@
 'use strict';
 
-Unit link https://learn.javascript.ru/object
-Task 1
-const user = {};
-user.name = 'Вася';
-user.surname = 'Петров';
-user.name = 'Сергей';
-delete user.name;
-console.log(user);
+// Unit link https://learn.javascript.ru/array
 
-//Unit link https://learn.javascript.ru/object-for-inhttps://learn.javascript.ru/object-for-in
 // Task 1
-function isEmpty(obj) {
-  let count = 0;
-  for (let key in obj) {
-    count++;
-  }
-  if (count == 0) {
-    return false;
-  }
-  return true;
+
+function getLastArray(arr) {
+  return arr[arr.length - 1];
 }
-var menu = {};
-console.log(isEmpty());
 
 // Task 2
-function isEmpty(obj) {
-  let sum = 0;
-  for (let key in obj) {
-    sum = sum + obj[key];
-  }
-  return sum;
+
+function addArray(arr, elem) {
+  arr.push(elem);
 }
-console.log(isEmpty(salaries));
+addArray(arr, 'Компьютер');
 
 // Task 3
-function isEmpty(obj) {
-  let sum = 0;
-  let result;
-  for (let key in obj) {
-    if (obj[key] > sum) {
-      result = obj[key];
-      sum = result;
-    } else {
-      result = sum;
-    }
-  }
-  return result;
-}
 
-// Task 4
-function isNumeric(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
-}
-
-function multiplyNumeric(obj) {
-  for (let key in obj) {
-    if (isNumeric(obj[key])) {
-      obj[key] *= 2;
-    }
-  }
-}
-
-// ADDITIONAL TASKS
-// Reverse the given string
-function flipLine(str) {
-  return str.split('').reverse().join('');
-}
-console.log(flipLine('gnirts emoS'));
+var styles = ['Джаз', 'Блюз'];
+styles.push('Рок-н-Ролл');
+styles[styles.length - 2] = 'Классика';
+console.log(styles.shift());
+styles.unshift('Рэп', 'Регги');
