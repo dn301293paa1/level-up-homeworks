@@ -1,8 +1,8 @@
 'use strict';
 
-Unit link https://learn.javascript.ru/array
+// Unit link https://learn.javascript.ru/array
 
-Task1
+// Task1
 
 function array(arr) {
   let lastElem = arr[arr.length - 1];
@@ -49,6 +49,49 @@ var arr = [1, 2, 3];
 var arr2 = arr; // присвоили arr2  ссылку масива arr
 arr2[0] = 5; // поменяли по ссылке 0 елемент масива ссылки
 console.log(arr[0], arr2[0]); // будет в двух случаях 5 так как ссылка у двух массивов одинаковая
+
+// find 7
+function find(arr, value) {
+  let i;
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] === value) return i;
+  }
+  return -1;
+}
+
+arr = ['test', 2, 1.5, false];
+console.log(find(arr, false));
+
+//task 8
+function filterRange(arr, a, b) {
+  var newArray = [];
+  var i;
+  for (i = 0; i < arr.length; i++) {
+    if (a <= arr[i] && b >= arr[i]) {
+      newArray.push(arr[i]);
+    }
+  }
+  return newArray;
+}
+var arr = [5, 4, 3, 8, 0];
+var filtered = filterRange(arr, 3, 5);
+console.log(filtered);
+
+// Решето не решил
+
+// task 10
+function getMaxSum(arr) {
+  let maxSum = 0;
+  let sum = 0;
+  let i;
+  for (i = 0; i < arr.length; i += 1) {
+    sum += arr[i];
+    maxSum = Math.max(maxSum, sum);
+    if (sum < 0) sum = 0;
+
+    return maxSum;
+  }
+}
 
 // unit https://learn.javascript.ru/array-methods#tasks
 //task  Функция removeClass
@@ -115,14 +158,11 @@ console.log(arr);
 var arr = ['HTML', 'JavaScript', 'CSS'];
 let arrSorted = arr.slice().sort();
 
-
 //unit link  https://learn.javascript.ru/array-iteration#map
 //task 1
 
-var arrLength= arr.map(function(names){
-  return names.length
-})
+var arrLength = arr.map(function(names) {
+  return names.length;
+});
 
-console.log(arrLength)
-
-
+console.log(arrLength);
